@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: "http://course-rater-project/api/courses"
+    baseURL: "https://course-rater-project/api/courses"
 })
