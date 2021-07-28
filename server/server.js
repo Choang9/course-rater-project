@@ -8,18 +8,19 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(morgan("dev"));
 
 // Get all courses
 app.get("/api/courses", async (req, res) => {
     try {
         const results = await db.query("select * from courses left join (select course_id, COUNT(*), TRUNC(AVG(rating),1) as average_rating from reviews group by course_id) reviews on courses.id = reviews.course_id;");
         res.status(200).json({
-        status: "success",
-        results: results.rows.length,
-        data: {
-            courses: results.rows
-        },
-    });
+            status: "success",
+            results: results.rows.length,
+            data: {
+                courses: results.rows
+            },
+        });
     } catch (err) {
         console.log(err);
     }
