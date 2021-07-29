@@ -14,6 +14,11 @@ This is a personal project that shows the ratings and reviews of school courses.
 - [Node](https://nodejs.org/en/)
 - [Material UI](https://material-ui.com/)
 
+## Deployed On
+
+- [Heroku](https://www.heroku.com/)
+- [Netlify](https://www.netlify.com/)
+
 ## Usage
 
 When the application is open, you can view a list of courses and their ratings. Click on a course to view its reviews or add one to it.
