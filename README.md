@@ -1,6 +1,5 @@
 # Course-Rater Web Application
 
-Live demo: https://jovial-khorana-776104.netlify.app/
 
 ## Introduction
 
